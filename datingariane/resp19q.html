@@ -1,0 +1,60 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/resp19q.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:14:04 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>response</title><link rel="stylesheet" type="text/css" href="date.css" />
+
+<SCRIPT LANGUAGE="JavaScript">
+var response="";
+var resp = new Array(6);
+resp[1] = 'I think we have had enough swimming for the night. &nbsp; Let\'s get out of the pool.';
+resp[2] = 'I think we have had enough skinny dipping for the night. &nbsp; Let\'s get out of the pool.';
+resp[3] = 'That was a fun race. &nbsp; Let\'s get out for now. &nbsp; Maybe later you can challenge me to a rematch.';
+resp[4] = 'That was a fun race. &nbsp; Let\'s get out for now. &nbsp; Be warned, I may ask you for a rematch later.';
+resp[5] = 'Our little swim was nice, maybe we could do it again later?';
+resp[6] = 'Our little naked swim was nice, maybe we could do it again later?';
+
+// Loads the appropriate quote based on random number.
+if (parent.swimct > 8 && parent.dress < 7)
+	response = resp[1];
+if (parent.swimct > 8 && (parent.dress == 7 || parent.dress==9))
+	response = resp[2];
+if (parent.swimct <= 8 && parent.race == 1)
+	response = resp[3];
+if (parent.swimct <= 8 && parent.race == 2)
+	response = resp[4];
+if (parent.swimct <= 8 && parent.race == 0 && parent.dress < 7)
+	response = resp[5];
+if (parent.swimct <= 8 && parent.race == 0 && (parent.dress == 7 || parent.dress==9))
+	response = resp[6];
+
+function changeText(){
+	document.getElementById('playact').innerHTML = parent.playtext;
+}
+function changeTextOut(){
+	document.getElementById('playact').innerHTML = " ";
+}
+//  End -->
+</script>
+</head>
+
+
+<body>
+<p>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+document.write(response);
+// End -->
+</SCRIPT>
+</p>
+<p><font id="playact"></font> 
+</p>
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/resp19q.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:14:04 GMT -->
+</html>

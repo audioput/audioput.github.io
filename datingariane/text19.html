@@ -1,0 +1,300 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text19.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:28:10 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var trip=0;
+var tstart=0;
+var tend=0;
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+function loadpic()
+{
+  	parent.swam = 1;
+  	parent.addevent(0,3);
+  	if (parent.dress == 9){
+  		parent.addevent(0,5);
+  		parent.wet = 1;
+  	}
+	if (parent.dress == 7 && parent.towel == 1){
+		parent.dress = 5;
+		parent.towel = 0;
+	}
+  	if (parent.dress == 6 || parent.dress == 3){
+  		parent.addevent(0,5);
+  		parent.picture.location.href = "pic18k.html";
+		parent.respond.location.href = "resp18k.html";
+	}
+	else {
+  		parent.swimlap();
+  		parent.picture.location.href = "pic19.html"; //diving in dress = 4, 5, or 7 choice: get in
+  		parent.respond.location.href = "resp19.html";
+  	}
+}
+
+function swimnude()
+{
+  	parent.dress = 9;
+  	parent.wet = 1;
+	parent.addevent(0,5);
+	loadpic();
+}
+
+function swim1() 
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19a.html"; //swim in water choices: grab, keep swimming
+  	parent.respond.location.href = "resp19a.html";
+}
+
+function grab() //grab suit or body
+{
+	if (parent.justfriends() || !parent.funloving() || parent.facef == 0 || parent.rebec == 1 || parent.food == 0){
+		parent.addxp(1);
+		parent.ending("end19a.html");
+	}
+	else {
+		if (parent.grabct == 1) {
+			parent.addxp(1);
+			parent.ending("end19c.html");
+		}
+		else {
+			parent.grabct = 1;
+			parent.addxp(2);//
+			parent.picture.location.href = "pic19r.html"; //top off or breast fondle
+		}
+	}
+}
+
+function romantic()
+{
+	parent.picture.location.href = "pic19s.html"; //get out and shower
+}
+
+function horseplay()
+{
+	if (parent.dress == 5) {
+		parent.addxp(3);//
+		parent.dress = 7;
+		parent.picture.location.href = "pic19t.html"; //skinny dip
+	}
+	else {
+		parent.picture.location.href = "pic19u.html"; //she grabs you
+	}
+}
+
+function giveback()
+{
+	parent.nudeoff();
+	parent.picture.location.href = "pic19v.html"; //she puts top back on
+}
+
+function keepit()
+{
+	parent.picture.location.href = "pic19w.html"; //she grabs your shorts
+}
+
+function secondchance()
+{
+	parent.nudeon();
+	parent.picture.location.href = "pic19x.html"; //she holds shorts
+}
+
+function giveback2()
+{
+	parent.picture.location.href = "pic19y.html"; //she puts top back on
+}			
+
+function keepit2()
+{
+	parent.change(20);
+}
+
+function tread() 
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19b.html"; //tread water choices: race, swim more, skinny dip, get out
+  	parent.respond.location.href = "resp19b.html";
+}
+
+function race1() 
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19c.html"; //intro the underwater race
+  	parent.respond.location.href = "resp19c.html";
+}
+
+function race2() 
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19d.html"; //click A B C to hold breath
+  	parent.respond.location.href = "resp19d.html";
+}
+
+function clicka()
+{
+	trip = 1;
+	tstart = new Date().getTime();
+}
+
+function clickb()
+{
+	if (trip == 1) trip = 2;
+}
+	
+function clickc()
+{
+	if (trip == 2) {
+		tend = new Date().getTime();
+		parent.racetime = tend - tstart;
+		parent.picture.location.href = "pic19e.html"; //swimming side by side underwater
+		parent.respond.location.href = "resp19e.html";
+  	}
+}
+
+function race3() //at the wall
+{
+  	if (parent.racetime < 3000) {
+  		parent.picture.location.href = "pic19f.html"; // she is swimming toward you
+  	}
+  	else {
+  		parent.picture.location.href = "pic19g.html"; // she is at the wall turning around
+  	}
+}
+	
+function race4() //home stretch
+{
+  	if (parent.racetime < 2000) {
+  		if (parent.race == 1)
+  			if (parent.food == 0)
+  				parent.obsess--;
+  			else
+  				parent.nudeoff();
+  		if (parent.race == 2)
+  			parent.race = 3;
+  		else
+  			parent.race = 1;
+  		parent.picture.location.href = "pic19h.html"; // you are above water, she is swimming below you
+  	}
+  	else {
+  		if (parent.racetime < 3000) {
+  			parent.race = 2;
+  			parent.picture.location.href = "pic19i.html"; // you look back, she is behind you
+  		}
+  		else {
+  			if (parent.race == 1)
+  				if (parent.food == 0)
+  					parent.obsess--;
+  				else
+  					parent.nudeoff();
+  			if (parent.race == 2)
+  				parent.race = 3;
+  			else
+  				parent.race = 1;
+  			parent.picture.location.href = "pic19j.html"; // you are swimming behind her
+  		}
+  	}
+}
+
+function race5() //finish then get out
+{
+  	if (parent.race == 1 || parent.race == 3) {
+  		parent.picture.location.href = "pic19k.html"; // she is at the finish, you are above water
+  	}
+  	else {
+  		parent.nudeon();
+  		parent.picture.location.href = "pic19l.html"; // same pic as 19b
+  	}
+}
+
+function swimmore()
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19m.html"; //same as pic 19a choices: grab, swim underwater
+  	parent.respond.location.href = "resp19m.html";
+}
+
+function swimunder() 
+{
+  	parent.swimlap();
+  	parent.picture.location.href = "pic19n.html"; //swim underwater choices: come up for air = getout
+}
+
+function skinnydip()
+{
+  	if (parent.food >= 1 && parent.nudeok() && parent.funloving() && parent.topf > 0) {
+  		parent.dress = 7;
+  		parent.changect = 2;
+  		if (parent.drive == 0) 
+  			parent.drive = 1;
+		parent.picture.location.href = "pic19o.html"; //take off suit in pool choice: swimmore
+  		parent.respond.location.href = "resp19o.html"; 
+  	}
+  	else {
+    	parent.ending('end18c.html');
+  	}
+}
+
+function getout() //get out
+{
+	if (parent.race >= 2 && parent.swimct > 8) {
+		parent.picture.location.href = "pic19p.html"; //get out choice: shower
+  	}
+  	else {
+  		parent.picture.location.href = "pic19q.html"; //get out choice: patio
+  		parent.respond.location.href = "resp19q.html";
+  	}
+}
+
+function patio()
+{
+   	if (parent.food >= 1) {
+   		if (parent.dress == 5) {
+    		parent.dress = 7;
+    		parent.towel = 1;
+    	}
+    	else {
+    		if (parent.dress == 7){
+    			parent.towel = 0;
+    		}
+    	}
+    	parent.change(18);
+    }
+   	else {
+   		if (parent.swimct > 8) {
+   			endtext = 'It was a nice swim, but I\'m feeling too tired and hungry. Time to call it a night.<BR>On a scale of 1 to 10 you rank a 4.';
+			endnum = 0;
+			change(90);
+    	}
+    	else {
+    		parent.change(15);
+    	}
+ 	}
+}
+
+function shower()
+{
+  	parent.changeto = 1;
+  	parent.change(84);
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text19.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:28:58 GMT -->
+</html>

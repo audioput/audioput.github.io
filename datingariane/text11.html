@@ -1,0 +1,369 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text11.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:26:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+function loadpic()
+{
+  		if (parent.food == 0) {
+      		parent.picture.location.href = "pic11.html";
+  		}
+  		else {
+    		if (parent.drive == 0) {
+    		    if (parent.changect < 2){
+    		    	parent.picture.location.href = "pic11b.html";
+    			}
+    			else {
+      				parent.picture.location.href = "pic11f.html";
+      			}
+      		}
+    		else {
+    			if (parent.drive == 1){
+    				if (parent.romance == 2 && (parent.dress == 8 || parent.dress == 6)) {
+    					parent.changect = 2;
+    					parent.picture.location.href = "pic11h.html";
+    				}
+    				else {
+    					if (parent.changect < 2){
+    						parent.picture.location.href = "pic11d.html";
+    					}
+    					else {
+      						parent.picture.location.href = "pic11g.html";
+      					}
+      				}
+    			}
+    			else {
+      			   	if (parent.changect < 1){
+    					parent.picture.location.href = "pic11a.html";
+    				}
+    				else {
+    					if (parent.rebec == 0)
+      						parent.picture.location.href = "pic11e.html";
+      					else
+      						parent.picture.location.href = "pic11i.html";
+      				}
+      			}
+      		}
+   		}
+   		parent.respond.location.href = "resp11.html";
+}
+
+function choice1() //bedroom
+{
+  	if (parent.dress == 2) {
+  		parent.quote = 14;
+  		parent.dress = 1;
+  		loadpic();
+  	}
+  	else {
+  		if (parent.dress == 3 || parent.dress == 6) {
+  			choice8();
+  		}
+  		else {
+  			if (parent.dress == 8) {
+  				parent.change(16);
+  			}
+  			else {
+				parent.changeto = 0;
+  				parent.change(12);
+  			}
+  		}
+  	}
+}
+
+function choice2() //bathroom
+{
+	if (parent.food == 0){
+  		parent.addxp(1);
+		parent.ending("end13a.html");
+	}
+	else {
+		if (parent.swam == 0) {
+      		if (parent.freshen >= 1) {
+  				parent.addxp(1);
+          		parent.ending("end13b.html");
+         	}
+         	else {
+          		parent.change(13);
+         	}
+		}
+		else {
+			parent.changeto = 1;
+          	parent.change(84);
+     	}
+ 	}
+}
+
+function choice3() //livingroom
+{
+  parent.justchanged = 0;
+  parent.dance = 11;
+  	if (parent.dress == 4 || parent.dress == 5 || parent.dress == 7 || parent.dress == 9) {
+		parent.change(38);
+	}
+	else {
+   		if (parent.drinks >= 1) {
+   			if (parent.dancect == 0 && parent.food > 0) {
+      			parent.change(38);
+      		}
+      		else {
+      			parent.change(37);
+      		}
+       }
+       else {
+          	parent.change(32);
+		}
+	}
+}
+
+function choice4() //backyard
+{
+	if (parent.food == 0) {
+   		parent.change(15);
+  	}
+   	else {
+   		if (parent.shower == 1) {
+      		parent.change(21);
+      	}
+      	else {
+			parent.change(18);
+    	}
+   	}
+}
+
+function choice5() //kitchen
+{
+  	parent.justchanged = 0;
+  	if (parent.food >= 1) {
+  		parent.change(31);
+   	}
+	else {
+		if (parent.drink > 0) {
+			parent.change(23);
+		}
+		else {
+			parent.change(22);
+		}
+   	}
+}
+
+function choice6() //go out
+{
+	if (parent.dress == 3 || parent.dress == 4 || parent.dress == 5 || parent.dress == 6 || parent.dress == 7 || parent.dress == 9){
+   		parent.changeto = 5;
+   		if (parent.swam == 1)
+    		parent.change(84);
+    	else
+    		parent.change(12);
+    }
+    else {
+   		if (parent.dress == 2) {
+  				parent.dress = 1;
+  				parent.quote = 1;
+  		}
+      	parent.change(64);
+   	}
+}
+
+function fastfood()
+{
+	if (parent.drinks >= 2){
+		parent.change(24);
+	}
+	else {
+		if (parent.nice > 0) {
+    		parent.changeto = 8;
+    		parent.change(12);
+  		}
+  		else {
+    		parent.change(106);
+  		}
+  	}
+}
+
+function walk()
+{
+	parent.change(107);
+}
+
+function bball()
+{
+	parent.change(108);
+}
+
+function choice7() //go to store
+{
+	if (parent.dress == 2 || parent.dress == 3 || parent.dress == 6) {
+		if (parent.dress == 2) {
+			parent.endtext = 'I\'m not going to the store without a shirt on. You spoiled the mood.<BR>On a scale of 1 to 10, you get a 7.';
+			parent.endnum = 0;
+			parent.change(90);
+		}
+		else {
+			parent.endtext = 'I\'m not going to the store without clothes on. You spoiled the mood.<BR>On a scale of 1 to 10, you get a 7.';
+			parent.endnum = 0;
+			parent.change(90);
+		}
+	}
+	else {
+		parent.drive = 2;
+  		parent.change(79);
+  	}
+}
+
+function choice8() //stay the night
+{
+	if (parent.sleepover()) {
+		if (parent.justchanged == 1){ //if you just put clothes on, no immediately taking them off
+  			parent.addxp(1);
+			if (parent.dress == 1)
+       		parent.ending("end11a.html");
+       	if (parent.dress == 4)
+       		parent.ending("end11b.html");
+       }
+       else {
+			if (parent.swam == 1) {
+				parent.changeto = 2;
+				parent.change(84);
+			}
+			else {
+				parent.change(60);
+			}
+		}
+	}
+	else {	
+		parent.endtext = 'Is it late enough for bed already? I guess it is. But, no you can\'t sleep over.<BR>On a scale of 1 to 10, you get a 6.';
+		parent.endnum = 0;
+		parent.change(90);
+	}
+}
+
+function dressdown()
+{
+	parent.changeto = 9;
+  	parent.change(12);
+}
+
+function dressswim()
+{
+	parent.changeto = 0;
+  	parent.change(12);
+}
+
+function rkit()
+{
+	if (parent.parktrip < 1) {
+		parent.picture.location.href = "pic56f.html";
+	}
+	else {
+		parent.spinbottle == 1;
+		parent.change(31);
+	}
+}
+
+function photoshoot()
+{
+	if (parent.dress == 8) {
+		parent.quote = 3;
+		parent.change(86);
+	}
+	else {
+		parent.quote = 0;
+		parent.change(86);
+	}
+}
+
+function nextsuggest()
+{
+	parent.spinbottle == 1;
+	parent.change(31);
+}
+
+function rbath()
+{
+	parent.swam = 1;
+	parent.changeto = 1;
+	parent.change(84);
+}
+
+function rbed()
+{
+	if (parent.dress == 6) {
+		if (parent.swam == 1) {
+			parent.changeto = 2;
+			parent.change(84);
+		}
+		else {
+			parent.change(60);
+		}
+	}
+	else {
+		parent.change(16);
+	}
+}
+
+function rliv()
+{
+	if (parent.dress == 6) {
+		parent.change(47);
+	}
+	else {
+		choice3();
+	}
+}
+
+function rswim()
+{
+	if (parent.dress == 6) {
+		parent.change(19);
+	}
+	else {
+		choice4();
+	}
+}
+
+function rstore()
+{
+	if (parent.dress == 6) {
+		parent.endtext = 'We just got here. Why go to the store now? You broke my romantic mood.<BR>On a scale of 1 to 10, you get a 7.';
+		parent.endnum = 0;
+		parent.change(90);
+	}
+	else {
+		choice7();
+	}
+}
+
+function rebkit()
+{
+	if (parent.dress == 2 || parent.dress == 3 || parent.dress == 6) {
+		parent.quote = 2;
+		parent.change(103);
+	}
+	else {
+		parent.change(31);
+	}
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p> </p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text11.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:26:25 GMT -->
+</html>

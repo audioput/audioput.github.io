@@ -1,0 +1,352 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text31.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:36:19 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+var count=0;
+var temp=0;
+
+function loadpic()
+{
+	if (parent.dress == 1 || parent.dress == 2 || parent.dress == 4 || parent.dress == 8 || parent.dress == 11) {
+  		if (parent.changect == 2 || parent.drive == 2 || parent.spinbottle == 1 || parent.shower == 1 || parent.swimct > 2 || parent.hottub > 0) {
+			makesuggestion();
+  		}
+  		else {         
+      		parent.picture.location.href = "pic31a.html";
+      		parent.respond.location.href = "resp31.html";
+  		}
+  	}
+  	else {
+  		if (parent.drive == 2 || parent.spinbottle == 1 || parent.shower == 1 || parent.swimct > 2 || parent.hottub > 0) {
+			makesuggestion();;
+  		}
+  		else {         
+      		parent.picture.location.href = "pic31a.html";
+      		parent.respond.location.href = "resp31.html";
+  		}
+  	}
+}
+
+function suggestion(n)
+{
+	if (parent.justfriends() && count == 1 && parent.rebec == 0) // 1 boardgame
+		return 1;
+	if (parent.romance == 2 && count == 1 && parent.sleepover() && parent.intimate())
+		return 12;
+		
+	if (n <= 1) { // 2 drive
+		n = 2;
+		if (parent.drive == 0)
+			return n;
+	}		
+	if (n == 2) { // 3 dance
+		n++;
+		if (parent.dancect == 0 && parent.rebec == 0)
+			return n;
+	}	
+	if (n == 3) { // 4 basketball
+		n++;
+		if ((parent.dress == 1 || parent.dress == 4 || parent.dress == 8) && parent.parktrip == 0 && parent.rebec == 0)
+			return n;
+	}
+	if (n == 4) { // 5 rematch
+		n++;
+		if (parent.swimct < 8 && parent.race > 0  && parent.shower == 0)
+			return n;
+	}
+	if (n == 5) { // 6 stargaze
+		n++;
+		if ((parent.dress == 1 || parent.dress == 4 || parent.dress == 8) && parent.stargaze == 0)
+			return n;
+	}
+	if (n == 6) { // 7 couch
+		n++;
+		if ((parent.dress == 1 || parent.dress == 8) && (parent.topf == 0 || parent.rebec == 1))
+			return n;
+	}
+	if (n == 7) { // 8 hot tub, 9 swim
+		n = 9;
+		if (parent.dress == 1 || parent.dress == 2 || parent.dress == 6 || parent.dress == 8){
+			if (parent.swimct < 2 && parent.shower == 0)
+				return 9;
+			else {
+				if (parent.hottub < 2 && parent.shower == 0)
+					return 8;
+			}
+		}
+		else {
+			if (parent.hottub < 2 && parent.shower == 0)
+				return 8;
+			else {
+				if (parent.swimct < 2 && parent.shower == 0)
+					return 9;
+			}
+		}
+	}
+	if (n == 8 || n == 9) { // 10 shower
+		n = 10;
+		if ((parent.hottub >=2 || parent.swimct > 0) && parent.shower == 0)
+			return n;
+	}
+	if (n == 10) { // 11 beer run
+		n++;
+		if (!(parent.dress == 2 || parent.dress == 3 || parent.dress == 6) && parent.drive < 2 && parent.beer == 0)
+			return n;
+	}
+	if (n == 11) { // 12 have sex
+		n++;
+		if (parent.sleepover() && parent.intimate() && parent.rebec == 0)
+			return n;
+	}
+	if (n == 12) { // 13 board game again
+		n++;
+		if (parent.dress == 1 || parent.dress == 4 || parent.dress == 8)
+			return n;
+	}
+	if (n == 13) { // 14 sleep over
+		n++;
+		if (parent.sleepover() && parent.rebec == 0)
+			return n;
+	}
+	if (n == 14) { // 15 whiskey
+		n++;
+		if (parent.rebec == 0)
+			return n;
+	}
+	if (n == 15) { // ending if all suggestions have run out
+		if (parent.rebec == 0) {
+			parent.endtext = 'I cant think of anything else to do tonight, why don\'t we say goodnight.';
+			parent.endnum = 0;
+			parent.change(90);
+		}
+		else {
+			parent.endtext = 'I cant think of anything else to do tonight, especially since Rebecca has taken the bedroom.<br>Why don\'t we say goodnight for now, and finish this off another night when the house is less crowded.';
+			parent.endnum = 0;
+			parent.change(90);
+		}
+	}
+}
+
+function makesuggestion()
+{
+	count++;
+	if (count >= 4) {
+		parent.endtext = 'If you don\'t like any of my suggestions, maybe we should call it a night.<br>On a scale of 1 to 10, you get a 5.';
+		parent.endnum = 0;
+		parent.change(90);
+	}
+	else {
+		parent.quote = count;
+		temp = suggestion(parent.suggest);
+		parent.suggest = temp;
+		parent.picture.location.href = "pic31b.html";
+		parent.respond.location.href = "resp31b.html";
+	}
+}
+
+function nextsuggest()
+{
+	makesuggestion();
+}
+
+function followsuggest()
+{
+	parent.justchanged = 0;
+	if (parent.suggest == 1){
+		parent.change(102);
+	}
+	if (parent.suggest == 2){ // drive
+		if (parent.dress == 4 || parent.dress == 5 || parent.dress == 7){
+   			parent.changeto = 5;
+   			if (parent.swam == 1)
+    			parent.change(84);
+    		else
+    			parent.change(12);
+    	}
+    	else {
+      		parent.change(64);
+    	}
+	}
+	if (parent.suggest == 3){ // dance
+		parent.dance = 11;
+		parent.change(38);
+	}
+
+	if (parent.suggest == 4){ // park
+		if (parent.dress == 1)
+			parent.change(108);		
+		else
+			parent.picture.location.href = "pic31d.html";	
+	}
+	if (parent.suggest == 5){ // swim race rematch
+		parent.change(19);
+	}
+	if (parent.suggest == 6){ // stargaze
+		if (parent.shower == 1)
+			parent.sgsource = 21;
+		else
+			parent.sgsource = 18;
+		parent.change(55);
+	}
+	if (parent.suggest == 7){ // couch
+		parent.change(37);
+	}
+	if (parent.suggest == 8){ // hot tub
+  		if (parent.dress == 3 || parent.dress == 4 || parent.dress == 5 || parent.dress == 6 || parent.dress == 7 || parent.dress == 9){
+      		parent.change(100);
+ 		}
+  		else {
+      		parent.changeto = 3;
+      		parent.change(12);
+		}
+	}
+	if (parent.suggest == 9){ // swim
+  		if (parent.dress == 3 || parent.dress == 4 || parent.dress == 5 || parent.dress == 6 || parent.dress == 7 || parent.dress == 9){
+  			if (parent.dress == 3){
+  				parent.quote = 2;
+  				parent.change(19);
+  			}
+  			else {
+  				parent.change(19);
+  			} 
+  		} 					
+  		else {
+    		if (parent.nudeok() && parent.funloving()) {
+      			if (parent.topf > 0){
+      				if (parent.rebec == 0) {
+       				parent.changeto = 10;
+       				parent.change(12);
+       			}
+       			else {
+       				parent.change(18);//consider change
+       			}
+       		}
+      			else {
+       			parent.changeto = 1;
+       			parent.quote = 1;
+       			parent.change(12);
+       		}
+      		}
+    		else {
+      			parent.changeto = 1;
+      			parent.quote = 1;
+      			parent.change(12);
+      		}
+  		}
+	}
+	if (parent.suggest == 10){ // shower
+		parent.changeto = 1;
+       parent.change(84);
+	}
+	if (parent.suggest == 11){ // beer run
+    	parent.drive = 2;
+    	if (parent.dress == 5) {
+    		parent.dress = 7;
+    		parent.towel = 1;
+    	}
+    	if (parent.dress == 9) {
+    		parent.dress = 7;
+    		parent.towel = 0;
+    	}
+  		parent.change(79);
+	}
+	if (parent.suggest == 12){ // sex
+		if (parent.swam == 1) {
+			parent.changeto = 2;
+			parent.change(84);
+		}
+		else {
+			parent.change(60);
+		}
+	}
+	if (parent.suggest == 13){ // board game
+		parent.change(102);
+	}
+	if (parent.suggest == 14){ // stay the night
+		if (parent.swam == 1) {
+			parent.changeto = 2;
+			parent.change(84);
+		}
+		else {
+			parent.change(60);
+		}
+	}
+	if (parent.suggest == 15){
+		parent.change(57);
+	} 
+}
+
+function gotopark()
+{
+  	if (parent.dress == 4)
+  		parent.change(108);
+  	else
+  		parent.change(107);
+}
+
+function leave()
+{
+  	parent.comefrom = 1;
+	parent.change(11);
+}
+
+function drink()
+{
+  	parent.picture.location.href = "pic29b.html";
+  	parent.respond.location.href = "blank.html";
+}
+
+function whisky()
+{
+  	parent.change(57);
+}
+
+function enddrink()
+{
+  	parent.drinkup();
+  	nextsuggest();
+}
+
+function spinbottle() //spin
+{
+    parent.spinbottle = 1;
+    parent.change(56);
+}
+
+function dessert() //finish dessert and go elsewhere
+{
+    if (parent.dress == 11) {
+  		parent.addxp(1);
+    	parent.ending("end14.html");
+    }
+    else {
+    	parent.spinbottle = 1;
+    	parent.quote = 2;
+      	parent.comefrom = 3;
+    	parent.change(11);
+    }
+}
+
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text31.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:36:28 GMT -->
+</html>

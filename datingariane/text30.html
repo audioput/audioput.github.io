@@ -1,0 +1,289 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text30.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:33:32 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var eat = 0;
+var drink = 0;
+var talk = 0;
+var admire = 0;
+var topic = 0;
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+function loadpic()
+{
+	parent.addxp(5);//
+	parent.addxp(8);//
+  	parent.picture.location.href = "pic30a.html";
+ 	parent.respond.location.href = "resp30.html";
+  	parent.food = 2;
+}
+
+function choice1()
+{
+  eat++;
+  if (eat*drink*talk*admire > 0) {
+  		dinnerdone();
+    }
+  else {
+  if (eat >= 3){
+  	 parent.addxp(1);
+    parent.ending("end30a.html");
+    }
+  else {
+    parent.picture.location.href = "pic30b.html";
+    parent.respond.location.href = "resp30a.html";
+    }
+  }
+}
+
+function choice2()
+{
+  drink++;
+  parent.drinkup();
+  if (eat*drink*talk*admire > 0) {
+  		dinnerdone();
+    }
+  else {
+  if (drink >= 3){
+    parent.change(48);
+    }
+  else {
+    parent.picture.location.href = "pic30c.html";
+    parent.respond.location.href = "resp30b.html";
+    }
+  }
+}
+
+function choice3()
+{
+  talk++;
+  if (eat*drink*talk*admire > 0) {
+  		dinnerdone();
+    }
+  else {
+  if (talk >= 3){
+  	parent.addxp(1);
+    parent.ending("end30b.html");
+    }
+  else {
+    parent.picture.location.href = "pic30dq.html";
+    parent.respond.location.href = "resp24dq.html";
+    }
+  }
+}
+
+function choice4()
+{
+  admire++;
+  if (eat*drink*talk*admire > 0) {
+  		dinnerdone();
+    }
+  else {
+  if (admire >= 3){
+  	parent.addxp(1);
+    parent.ending("end30c.html");
+    }
+  else {
+    parent.picture.location.href = "pic30eq.html";
+    parent.respond.location.href = "resp24eq.html";
+    }
+  }
+}
+
+function choice5()
+{
+  parent.quote = 4;
+  parent.change(18);
+}
+
+function compwit()
+{
+	parent.wit++;
+	parent.quote = 1;
+	if (parent.wit >= 4) {
+		parent.addxp(1);
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30e.html";
+	parent.respond.location.href = "resp30d.html";
+}
+
+function compnice()
+{
+	parent.nice++;
+	parent.quote = 2;
+	if (parent.nice >= 4) {
+		parent.addxp(1);
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30e.html";
+	parent.respond.location.href = "resp30d.html";
+}
+
+
+function compsmart()
+{
+	parent.smart++;
+	parent.quote = 3;
+	if (parent.smart >= 4) {
+		parent.addxp(1);
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30e.html";
+	parent.respond.location.href = "resp30d.html";
+}
+
+
+function compobsess()
+{
+	parent.obsess++;
+	parent.quote = 4;
+	if (parent.obsess >= 4) {
+		parent.addxp(1);
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30e.html";
+	parent.respond.location.href = "resp30d.html";
+}
+
+function talksports()
+{
+	topic = 0;
+	parent.quote = 1;
+	parent.picture.location.href = "pic30dqs.html";
+    parent.respond.location.href = "resp24dqt.html";
+}
+
+function talkmovies()
+{
+	topic = 1;
+	parent.quote = 2;
+	parent.picture.location.href = "pic30dqm.html";
+    parent.respond.location.href = "resp24dqt.html";
+}
+
+function talkbooks()
+{
+	topic = 2;
+	parent.quote = 3;
+	parent.picture.location.href = "pic30dqb.htm";
+    parent.respond.location.href = "resp24dqt.html";
+}
+
+function talkwit()
+{
+	parent.wit++;
+	parent.quote = topic * 4 + 1;
+	if (parent.wit >= 4) {
+		parent.addxp(1);
+		parent.quote = 1;
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30d.html";
+	parent.respond.location.href = "resp24c.html";
+}
+
+function talknice()
+{
+	parent.nice++;
+	parent.quote = topic * 4 + 2;
+	if (parent.nice >= 4) {
+		parent.addxp(1);
+		parent.quote = 2;
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30d.html";
+	parent.respond.location.href = "resp24c.html";
+}
+
+
+function talksmart()
+{
+	parent.smart++;
+	parent.quote = topic * 4 + 3;
+	if (parent.smart >= 4) {
+		parent.addxp(1);
+		parent.quote = 3;
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30d.html";
+	parent.respond.location.href = "resp24c.html";
+}
+
+
+function talkobsess()
+{
+	parent.obsess++;
+	parent.quote = topic * 4 + 4;
+	if (parent.obsess >= 4) {
+		parent.addxp(1);
+		parent.quote = 4;
+		parent.ending("end30d.html");
+	}
+	parent.picture.location.href = "pic30d.html";
+	parent.respond.location.href = "resp24c.html";
+}
+
+function dinnerdone()
+{
+	if (parent.nice < 0)
+		parent.nice = 0;
+	if (parent.smart < 0)
+		parent.smart = 0;
+	if (parent.obsess < 0)
+		parent.obsess = 0;
+	if (parent.wit < 0)
+		parent.wit = 0;
+	if (parent.nice + parent.smart + parent.obsess == 0){
+		parent.quote = 1;
+		parent.addxp(1);
+		parent.ending("end30d.html");
+	}
+	else {
+		if (parent.wit + parent.smart + parent.obsess == 0){
+			parent.quote = 2;
+			parent.addxp(1);
+			parent.ending("end30d.html");
+		}
+		else {
+			if (parent.nice + parent.wit + parent.obsess == 0){
+				parent.quote = 3;
+				parent.addxp(1);
+				parent.ending("end30d.html");
+			}
+			else {
+				if (parent.nice + parent.smart + parent.wit == 0){
+					parent.quote = 4;
+					parent.addxp(1);
+					parent.ending("end30d.html");
+				}
+				else {
+    				parent.picture.location.href = "pic30f.html";
+    				parent.respond.location.href = "resp30e.html";
+    			}
+    		}
+   		}
+   	}
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text30.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:36:19 GMT -->
+</html>

@@ -1,0 +1,87 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/resp2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:11:25 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>response</title><link rel="stylesheet" type="text/css" href="date.css" />
+
+<SCRIPT LANGUAGE="JavaScript">
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+var resp = new Array(3);
+resp[1] = 'Hello,&nbsp; I\'m Ariane.&nbsp;&nbsp; Nice to meet you.';
+resp[2] = 'Hi there!&nbsp;&nbsp; My name is Ariane.';
+resp[3] = 'Hello, pleased to make your acquaintance.&nbsp;&nbsp; My name is Ariane.';
+
+// Loads the appropriate quote based on random number.
+var funny = Math.ceil(Math.random() * 10); 
+response = resp[Math.ceil(Math.random() * 3)];
+
+var chat2 = new Array(10);
+chat2[1] = 'A dislexic walks into a bra...';
+chat2[2] = 'There are three kinds of people: Those who can count and those who can\'t.';
+chat2[3] = 'If Venitian Blinds hadn\'t been invented, it would be curtains for all of us.';
+chat2[4] = 'If they ask George Washington for an ID, does he just pull out a quarter?';
+chat2[5] = 'Pencils could be made with erasers at both ends, but what would be the point?';
+chat2[6] = 'The dead batteries were given out free of charge.';
+chat2[7] = 'How long a minute is depends on what side of the bathroom door you\'re on. ';
+chat2[8] = 'Failure is not an option. It comes bundled with your software.';
+chat2[9] = 'Imitation is not the sincerest form of flattery. Stalking is. ';
+chat2[10] = 'Can vegetarians eat animal crackers?';
+
+
+var smart = Math.ceil(Math.random() * 5); 
+
+var chat = new Array(5);
+chat[1] = 'E = mc<sup>2</sup>';
+chat[2] = 'I think, &nbsp; therefore I am';
+chat[3] = 'The greatest knowledge is to <em>Know Yourself</em>.';
+chat[4] = 'Better to be thought a fool, than to open your mouth and remove all doubt.';
+chat[5] = 'The square of two sides of a right triangle is equal to the square of the hypotenus.';
+
+function changeTalk(){
+	document.getElementById('playact').innerHTML = chat[smart];
+}
+function changeTalkOut(){
+	smart=Math.ceil(Math.random() * 5);
+	document.getElementById('playact').innerHTML = " ";
+}
+
+function changeTalk2(){
+	document.getElementById('playact').innerHTML = chat2[funny];
+}
+function changeTalkOut2(){
+	funny=Math.ceil(Math.random() * 10);
+	document.getElementById('playact').innerHTML = " ";
+}
+
+function changeText(){
+	document.getElementById('playact').innerHTML = parent.playtext;
+}
+function changeTextOut(){
+	document.getElementById('playact').innerHTML = " ";
+}
+//  End -->
+</script>
+</head>
+
+
+<body>
+<p>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+document.write(response);
+// End -->
+</SCRIPT>
+</p>
+<p><font id="playact"></font> 
+</p>
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/resp2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:11:25 GMT -->
+</html>

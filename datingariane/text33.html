@@ -1,0 +1,145 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text33.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:36:43 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var kisses=0;
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+var secondtry = 0;
+var random_number;
+random_number = Math.ceil( Math.random() * 4);
+
+function loadpic()
+{
+   	if (secondtry == 1) parent.rpsrand = 2;
+   	parent.picture.location.href = "pic33.html";
+   	parent.respond.location.href = "resp33.html";
+}
+
+function rock()
+{
+ 	parent.rpsrand = random_number;
+ 	if (secondtry == 1){
+ 		parent.rpsrand = random_number + 2;
+ 	}
+ 	parent.picture.location.href = "pic33r.html";
+}
+
+function scissors()
+{
+ 	parent.rpsrand = random_number;
+ 	if (secondtry == 1){
+ 		parent.rpsrand = random_number + 2;
+ 	}
+ 	parent.picture.location.href = "pic33s.html";
+}
+
+function paper()
+{
+ 	parent.rpsrand = random_number;
+ 	if (secondtry == 1){
+ 		parent.rpsrand = random_number + 2;
+ 	}
+ 	parent.picture.location.href = "pic33p.html";
+}
+
+function next()
+{
+  	if (random_number == 1){ //player wins
+  		win();
+  	}
+  	if (random_number == 2){ //player loses
+  		lose();
+  	}
+  	if (random_number >= 3){ //tie
+  		if (secondtry == 0) {
+  			secondtry = 1;
+  			loadpic();
+  		}
+  		else {
+  			if (random_number == 3){ //player wins
+  				win();
+  			}
+  			else { //player loses
+  				lose();
+  			}
+  		}	
+  	}
+}
+
+function win()//player wins game
+{
+	parent.picture.location.href = "pic33a.html";
+	parent.respond.location.href = "resp33a.html";
+}
+
+function lose()
+{
+	if (secondtry == 0) {
+  		if (parent.nice > 0) {
+    		parent.changeto = 8;
+    		parent.change(12);
+  		}
+  		else {
+    		parent.change(106);
+  		}
+  	}
+  	else {
+  		parent.change(26);
+  	}
+}
+
+function choice1() //go out to dinner
+{
+  	if (parent.nice > 0) {
+   		parent.changeto = 8;
+   		parent.change(12);
+  	}
+  	else {
+   		parent.change(106);
+  	}
+}
+
+function choice2() //steak dinner
+{
+	parent.change(26);
+}
+
+function choice3() //get wine
+{
+	parent.drinks = 1;
+	if (parent.dancect >= 1 && parent.facef >= 1) {
+      parent.change(40);
+   	}
+   	else {
+   		parent.change(37);
+   	}
+}
+
+function choice4() //walk
+{
+	parent.change(107);
+}
+
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p> </p>
+</body>
+
+
+
+<!-- Mirrored from www.datingariane.com/text33.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:36:50 GMT -->
+</html>

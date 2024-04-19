@@ -1,0 +1,56 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/resp19c.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:13:49 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>response</title><link rel="stylesheet" type="text/css" href="date.css" />
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+var random_number;
+var resp = new Array(5);
+resp[1] = 'I\'m up for a race. As a challenge, we are going to race underwater holding our breath.<br>First one to do a lap underwater without taking a breath wins.';
+resp[2] = 'OK, I\'ll race you. Lets make it interesting and race underwater holding our breath.<br>First one to do a lap underwater without taking a breath wins.';
+resp[3] = 'A race? Sounds like fun. Lets make it interesting and race underwater holding our breath.<br>First one to do a lap underwater without taking a breath wins.';
+resp[4] = 'Looking for a rematch? Ready to get beat again? Same rules as last time:<br>First one to do a lap underwater without taking a breath wins.';
+resp[5] = 'I want a rematch. I think I can beat you this time. Same rules as last time:<br>First one to do a lap underwater without taking a breath wins.';
+
+// Loads the appropriate quote based on random number.
+if (parent.race > 0) {
+	random_number = 3 + parent.race;
+}
+else
+	random_number = Math.ceil(Math.random() * 3);
+
+response = resp[random_number];
+
+function changeText(){
+	document.getElementById('playact').innerHTML = parent.playtext;
+}
+function changeTextOut(){
+	document.getElementById('playact').innerHTML = " ";
+}
+//  End -->
+</script>
+</head>
+
+
+<body>
+<p>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+document.write(response);
+// End -->
+</SCRIPT>
+</p>
+<p><font id="playact"></font> 
+</p>
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/resp19c.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:13:49 GMT -->
+</html>

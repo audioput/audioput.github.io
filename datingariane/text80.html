@@ -1,0 +1,318 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text80.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:53:52 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+var click = 0;
+var racks = new Array(12);
+var num;
+
+function randomracks()
+{
+	var i;
+	var j;
+	var temp;
+	for(i=1;i<=12;i++)
+	{
+		racks[i] = i;
+	}
+	for(i=1;i<=6;i++)
+	{
+		j = Math.ceil(Math.random()*6);
+		temp = racks[j];
+		racks[j] = racks[i];
+		racks[i] = temp;
+	}
+	for(i=1;i<=6;i++)
+	{
+		j = Math.ceil(Math.random()*6)+6;
+		temp = racks[j];
+		racks[j] = racks[i+6];
+		racks[i+6] = temp;
+	}
+}
+
+function rackid(num)
+{
+	if(num == 1){
+		parent.skirt = 1;
+	}
+	if(num == 2){
+		parent.skirt = 2;
+	}
+	if(num == 3){
+		parent.skirt = 3;
+	}
+	if(num == 4){
+		parent.skirt = 4;
+	}
+	if(num == 5){
+		parent.skirt = 5;
+	}
+	if(num == 6){
+		parent.skirt = 6;
+	}
+	if(num == 7){
+		parent.blouse = 1;
+	}
+	if(num == 8){
+		parent.blouse = 2;
+	}
+	if(num == 9){
+		parent.blouse = 3;
+	}
+	if(num == 10){
+		parent.blouse = 4;
+	}
+	if(num == 11){
+		parent.blouse = 5;
+	}
+	if(num == 12){
+		parent.blouse = 6;
+	}
+}
+
+function loadpic()
+{
+  parent.addevent(1,1);
+  randomracks(); // one time only
+  parent.picture.location.href = "pic80.html";
+  click = 0;
+  parent.blouse = 0;
+  parent.skirt = 0;
+}
+
+function tryagain()
+{
+  parent.picture.location.href = "pic80.html";
+  click = 0;
+  parent.blouse = 0;
+  parent.skirt = 0;
+}
+
+function choice1() //choose rack 1
+{
+  rackid(racks[1]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice2() //choose rack 2
+{
+  rackid(racks[2]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice3() //choose rack 3
+{
+  rackid(racks[3]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice4() //choose rack 4
+{
+  rackid(racks[4]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice5() //choose rack 5
+{
+  rackid(racks[5]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice6() //choose rack 6
+{
+  rackid(racks[6]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+function choice7() //choose rack 7
+{
+  rackid(racks[7]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+function choice8() //choose rack 8
+{
+  rackid(racks[8]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+function choice9() //choose rack 9
+{
+  rackid(racks[9]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+function choice10() //choose rack 10
+{
+  rackid(racks[10]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+function choice11() //choose rack 11
+{
+  rackid(racks[11]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+function choice12() //choose rack 12
+{
+  rackid(racks[12]);
+  if (click == 0){
+    click = 1;
+    parent.respond.location.href = "resp80a.html";
+    }
+  else {
+    result();
+    }
+}
+
+
+function result() 
+{
+  parent.picture.location.href = "pic80a.html";
+  parent.respond.location.href = "resp80b.html";
+}
+
+function reaction() 
+{
+	if (parent.blouse == 0) { // missing top
+		parent.addxp(2);//
+		gameover();
+	}
+  	else {
+   		if (parent.skirt == 0) { //missing skirt
+      		gameover();
+      	}
+    	else {
+      		if (parent.skirt == parent.blouse) { //they match
+        		winner();
+        	}
+      		else { //they dont match try again
+        		tryagain();
+        	}
+      	}
+	}
+}
+
+
+function gameover()
+{
+  parent.nudeoff();
+  parent.picture.location.href = "pic80b.html";
+}
+
+function winner()
+{
+  parent.addevent(1,2);
+  parent.nudeon();
+  parent.picture.location.href = "pic80c.html";
+}
+
+function gohome()
+{
+  	if (parent.downtown > 0) {
+  		parent.downtown = 5;
+  		if (parent.justfriends()) {
+  			parent.change(89);
+  		}
+  		else {
+  			if (parent.dress == 8 && parent.food == 3){
+  				parent.change(98);
+  			}
+  			else {
+      			parent.comefrom = 2;
+  				parent.change(11);
+    		}
+  		}
+  	}
+  	else {
+  		parent.downtown = 5;
+  		parent.change(72);
+  	}
+}
+
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text80.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:54:04 GMT -->
+</html>

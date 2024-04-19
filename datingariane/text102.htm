@@ -1,0 +1,182 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text102.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:34:50 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+var temp = 0;
+
+function loadpic()
+{
+	parent.bgamea = 6 + 2 * Math.ceil( Math.random() * 3);
+	parent.bgamep = 6 + 2 * Math.ceil( Math.random() * 3);
+  	parent.picture.location.href = "pic102.html";
+}
+
+function playing()
+{
+	parent.picture.location.href = "pic102a.html";
+}
+
+function ending()
+{
+	if (parent.rebec == 0){
+		parent.bgamed1 = Math.ceil( Math.random() * 6);
+		parent.bgamed2 = Math.ceil( Math.random() * 6);
+		parent.picture.location.href = "pic102b.html";
+	}
+	else {
+		parent.quote = 1;
+		parent.change(103);
+	}
+}
+
+function playerroll()
+{
+	parent.bgamed1 = Math.ceil( Math.random() * 6);
+	parent.bgamed2 = Math.ceil( Math.random() * 6);
+	if (parent.bgamed2 > parent.bgamed1) {
+		temp = parent.bgamed2;
+		parent.bgamed2 = parent.bgamed1;
+		parent.bgamed1 = temp;
+	}
+	if (parent.bgamed1 == parent.bgamep || parent.bgamed2 == parent.bgamep || parent.bgamed1 + parent.bgamed2 == parent.bgamep){
+		parent.bgamep = 0;
+		playerwins();
+	}
+	else {
+		if (parent.bgamed1 == parent.bgamed2) {
+			if ((7 - parent.bgamed1) == parent.bgamep || (2 * (7 - parent.bgamed1)) == parent.bgamep || parent.bgamep == 7 || parent.bgamep == (7 + parent.bgamed1) || parent.bgamep == (7 + (7 - parent.bgamed1))){
+				parent.bgamep = 0;
+				playerwins();
+			}
+			else {
+				if (parent.bgamed1 < parent.bgamep) {
+					parent.bgamep = parent.bgamep - parent.bgamed1;
+					parent.quote = 1;
+				}
+				if (parent.bgamed2 < parent.bgamep) {
+					parent.bgamep = parent.bgamep - parent.bgamed2;
+					parent.quote = 1;
+				}
+				if ((7 - parent.bgamed1) < parent.bgamep) {
+					parent.bgamep = parent.bgamep - parent.bgamed1;
+					parent.quote = 1;
+				}
+				if ((7 - parent.bgamed2) < parent.bgamep) {
+					parent.bgamep = parent.bgamep - parent.bgamed2;
+					parent.quote = 1;
+				}
+				parent.picture.location.href = "pic102g.html";
+				parent.respond.location.href = "resp102g.html";
+			}
+		}
+		else {
+			if (parent.bgamed1 < parent.bgamep) {
+				parent.bgamep = parent.bgamep - parent.bgamed1;
+				parent.quote = 1;
+			}
+			if (parent.bgamed2 < parent.bgamep) {
+				parent.bgamep = parent.bgamep - parent.bgamed2;
+				parent.quote = 1;
+			}
+			parent.picture.location.href = "pic102c.html";
+			parent.respond.location.href = "resp102c.html";
+		}
+	}	
+}	
+
+function arianeroll()
+{
+	parent.bgamed1 = Math.ceil( Math.random() * 6);
+	parent.bgamed2 = Math.ceil( Math.random() * 6);
+	if (parent.bgamed2 > parent.bgamed1) {
+		temp = parent.bgamed2;
+		parent.bgamed2 = parent.bgamed1;
+		parent.bgamed1 = temp;
+	}
+	if (parent.bgamed1 == parent.bgamea || parent.bgamed2 == parent.bgamea || parent.bgamed1 + parent.bgamed2 == parent.bgamea){
+		parent.bgamea = 0;
+		arianewins();
+	}
+	else {
+		if (parent.bgamed1 == parent.bgamed2) {
+			if ((7 - parent.bgamed1) == parent.bgamea || (2 * (7 - parent.bgamed1)) == parent.bgamea || parent.bgamea == 7 || parent.bgamea == (7 + parent.bgamed1) || parent.bgamea == (7 + (7 - parent.bgamed1))){
+				parent.bgamea = 0;
+				arianewins();
+			}
+			else {
+				if (parent.bgamed1 < parent.bgamea) {
+					parent.bgamea = parent.bgamea - parent.bgamed1;
+					parent.quote = 1;
+				}
+				if (parent.bgamed2 < parent.bgamea) {
+					parent.bgamea = parent.bgamea - parent.bgamed2;
+					parent.quote = 1;
+				}
+				if ((7 - parent.bgamed1) < parent.bgamea) {
+					parent.bgamea = parent.bgamea - parent.bgamed1;
+					parent.quote = 1;
+				}
+				if ((7 - parent.bgamed2) < parent.bgamea) {
+					parent.bgamea = parent.bgamea - parent.bgamed2;
+					parent.quote = 1;
+				}
+				parent.picture.location.href = "pic102h.html";
+				parent.respond.location.href = "resp102h.html";
+			}
+		}
+		else {
+			if (parent.bgamed1 < parent.bgamea) {
+				parent.bgamea = parent.bgamea - parent.bgamed1;
+				parent.quote = 1;
+			}
+			if (parent.bgamed2 < parent.bgamea) {
+				parent.bgamea = parent.bgamea - parent.bgamed2;
+				parent.quote = 1;
+			}
+			parent.picture.location.href = "pic102d.html";
+			parent.respond.location.href = "resp102d.html";
+		}
+	}	
+}
+	
+function playerwins()
+{
+	parent.picture.location.href = "pic102e.html";
+	parent.respond.location.href = "resp102e.html";	
+}
+	
+function arianewins()
+{
+	parent.picture.location.href = "pic102f.html";
+	parent.respond.location.href = "resp102f.html";	
+}
+
+function gameover()
+{
+	parent.endtext = 'Well that was a fun game of Pachisi, but it is getting late. On a scale of 1 to 10 you get a 7.';
+	parent.endnum = 0;
+	parent.change(90);
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p> </p>
+</body>
+
+
+
+<!-- Mirrored from www.datingariane.com/text102.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:35:04 GMT -->
+</html>

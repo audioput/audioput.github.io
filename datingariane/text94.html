@@ -1,0 +1,270 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text94.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:01:21 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+var walkct = 0;
+var holdct = 0;
+var hugsct = 0;
+
+function loadpic()
+{
+	parent.addevent(5,2);
+	walkct++;
+	if (walkct == 1){
+		parent.picture.location.href = "pic94.html"; //1 loadpic - holdher
+		parent.respond.location.href = "resp94.html";
+	}
+	if (walkct == 2){
+		parent.picture.location.href = "pic94a.html"; //2 loadpic - holdher
+		parent.respond.location.href = "resp94a.html";
+	}
+	if (walkct == 3){
+		parent.picture.location.href = "pic94b.html"; //4 pursue
+		parent.respond.location.href = "resp94b.html";
+	}
+}
+
+function holdher()
+{
+	walkct++;
+	holdct++;
+	parent.topf++;
+	if (holdct == 1 && walkct == 2){
+		parent.picture.location.href = "pic94c.html"; //3 loadpic - holdher
+		parent.respond.location.href = "resp94a.html";
+	}
+	if (holdct == 1 && walkct == 3){
+		parent.picture.location.href = "pic94c1.html"; //3 pursue
+		parent.respond.location.href = "resp94b.html";
+	}
+	if (holdct == 2){
+		parent.picture.location.href = "pic94d.html"; //5 hugs
+		parent.respond.location.href = "resp94b.html";
+	}
+}
+
+function pursue()
+{
+	parent.nudeoff();
+	parent.picture.location.href = "pic94e.html"; //6 atcar
+	parent.respond.location.href = "resp94e.html";
+}
+
+function atcar()
+{
+	if (parent.dress == 8){
+		parent.picture.location.href = "pic94f.html"; //7 gohome
+		parent.respond.location.href = "resp94f.html";
+	}
+	else{
+		parent.picture.location.href = "pic94g.html"; //14 gohome getdressed
+		parent.respond.location.href = "resp94g.htm";
+	}
+}
+
+function getdressed()
+{
+	parent.dress = 8;
+	parent.picture.location.href = "pic94f.html"; //7 gohome
+	parent.quote = 1;
+	parent.respond.location.href = "resp94f.html";
+}
+
+function gohome()
+{
+	parent.quote = 0;
+	if (parent.justfriends()) {
+  		parent.change(89);
+  	}
+  	else {
+      	parent.comefrom = 2;
+  		parent.change(11);
+   	}
+}
+
+function hugs()
+{
+	hugsct++;
+	if (parent.romance == 0){
+		if (hugsct == 3){
+			parent.quote = 1;
+			pursue();
+		}
+		else {
+			parent.picture.location.href = "pic94h.html"; //8 kiss neck compliment
+			parent.respond.location.href = "resp94h.html";// 0 first 1 got kissed 2 got groped
+		}
+	}
+	else {
+		if (hugsct == 3){
+			walkback();
+		}
+		else {
+			if (hugsct == 2)
+				parent.dancect++;
+			if (parent.dress == 8){
+				parent.picture.location.href = "pic94i.html"; //8 kiss neck walkback
+				parent.quote = hugsct;
+				parent.respond.location.href = "resp94i.html";//1 acknowledge compliment 2 dance with me
+			}
+			else {
+				parent.picture.location.href = "pic94j.html"; //8 kiss neck sitdown
+				parent.quote = hugsct;
+				parent.respond.location.href = "resp94j.html";//1 dance with me 2 need to sitdown
+			}
+		}
+	}
+}
+
+function kiss()
+{
+	parent.facef++;
+	parent.picture.location.href = "pic94k.html"; //9 endkiss
+	parent.respond.location.href = "blank.html";
+}
+
+function neck()
+{
+	parent.topf++;
+	if (parent.dress == 6) {
+		parent.addxp(9);
+	}
+	parent.picture.location.href = "pic94l.html"; //10 or 11 endneck
+	parent.respond.location.href = "resp94l.html"; //multi answers
+}
+
+function compliment()
+{
+	hugsct = 0;
+	parent.nudeon();
+	parent.romance = 1;
+	if (parent.facef+parent.topf >= 4 && parent.facef*parent.topf >= 1){
+		parent.quote = 3;
+		undress();
+	}
+	else {
+		hugs();
+	}
+}
+
+function endkiss()
+{
+	if (parent.facef+parent.topf >= 4 && parent.facef*parent.topf >= 1 && parent.romance == 1 && parent.dress == 8){
+		parent.quote = 1;
+		undress();
+	}
+	else {
+		parent.quote = 1;
+		hugs();
+	}
+}
+
+function endneck()
+{
+	if (parent.facef == 0){
+		parent.quote = 2;
+		pursue();
+	}
+	else {
+		if (parent.facef+parent.topf >= 4 && parent.facef*parent.topf >= 1 && parent.romance == 1 && parent.dress == 8){
+			parent.quote = 2;
+			undress();
+		}
+		else {
+			parent.quote = 2;
+			hugs();
+		}
+	}
+}
+
+function undress()
+{
+	if (parent.nudeok()&& parent.romantic()){
+		hugsct = 0;
+		parent.addxp(2);//
+		parent.addxp(3);//
+		parent.addevent(5,5);
+		parent.dress = 6;
+		parent.romance = 2;
+		parent.picture.location.href = "pic94m.html"; //12 hugs
+		parent.respond.location.href = "resp94m.html"; //0 kiss-hug 1 comp
+	}
+	else {
+		hugs();
+	}
+}
+
+function sitdown()
+{
+	parent.picture.location.href = "pic94n.html"; // 16 walkback
+	parent.respond.location.href = "resp94n.html"; //
+}
+
+function walkback()
+{
+	if (parent.dress == 8) {
+		parent.quote = 2;
+		parent.picture.location.href = "pic94o.html"; // 15 atcar wade
+		parent.respond.location.href = "resp94o.html"; 
+	}
+	else {
+		parent.picture.location.href = "pic94p.html"; // 13 atcar
+		parent.respond.location.href = "resp94p.html"; //multi answers
+	}
+}	
+
+function wade()
+{
+	parent.picture.location.href = "pic92b.html";
+}
+function slip()
+{
+	parent.picture.location.href = "pic92c.html";
+}
+function fallin()
+{
+	parent.addevent(5,4);
+	parent.picture.location.href = "pic92d.html";
+}
+function getout()
+{
+	parent.picture.location.href = "pic92e.html";
+}
+function dressoff()
+{
+	parent.addxp(2);//
+	parent.addxp(3);//
+	parent.addevent(5,5);
+	parent.picture.location.href = "pic92f.html";
+}
+function gohome1()
+{
+	parent.endtext = "Well my dress is getting dryer. Think I'll call it a night anyways.<br>On a scale of 1 to 10, you get a 7.";
+	parent.dress = 17;
+	parent.endnum = 0;
+	parent.change(90);
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text94.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:04:17 GMT -->
+</html>

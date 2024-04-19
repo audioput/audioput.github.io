@@ -1,0 +1,347 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text12.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:26:25 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+var entered = 0;
+var enterok;
+
+function loadpic()
+{
+	if (parent.nudeok() && parent.cute()){
+		enterok = 1;
+	}
+	else {
+		enterok = 0;
+	}
+	//if you change into a swimsuit, then immediately change back, its over
+	if (parent.justchanged == 1){ 
+  		parent.addxp(1);
+		if (parent.dress == 4)
+       	parent.ending("end12g.html");
+       if (parent.dress == 7)
+       	parent.ending("end12h.html");
+  	}
+  	else {
+		if (parent.food == 0 && parent.dress < 4 && parent.changeto == 0) {
+  			parent.addxp(1);
+    		parent.ending("end12a.html");
+   		}
+   		else {
+    		if (parent.swam == 1 && parent.allwet == 0 && (parent.changeto == 0 || parent.changeto == 5)){
+    			parent.change(84);
+    		}
+    		else {
+    			if (parent.dress >= 4 && parent.dress != 8 && parent.dress != 11 && parent.changeto == 0) {
+    				if (parent.allwet == 0)
+    					parent.changeto = 12; //get dressed
+    				else {
+    					parent.endtext = 'I don\'t have anything to change into. I think we should call it a night.<BR>On a scale of 1 to 10 you rank a 5.';
+						parent.endnum = 0;
+						parent.change(90);
+					}
+    			}
+  				parent.picture.location.href = "pic12a.html";
+   		      	if (parent.changeto == 2){
+     	     		parent.respond.location.href = "resp12k.html";
+     	     	}
+    	     	else {
+    	     		if (enterok == 0)
+    	      			parent.respond.location.href = "resp12a.html";
+    	      		else
+    	      			parent.respond.location.href = "resp12g.html";
+   		      	}
+   		  	}
+       }
+	}
+}
+
+function choice1() //follow in to bedroom
+{
+  	if (enterok == 0 || parent.changeto == 2 || parent.changeto == 8){
+  		parent.addxp(1);
+  		parent.addxp(3);//
+  		parent.ending('end12b.html');
+  	}
+  	else {
+  		entered = 1;
+  		if (parent.changeto > 5 && parent.changeto != 12 && parent.drive == 0)
+  			parent.drive = 1;
+  		//begin xp calculations
+  		if (parent.changeto==0 || parent.changeto == 1 || parent.changeto == 3) {
+			if (parent.dress == 2){
+				parent.addxp(2);//
+			}
+			else {
+				if (parent.drive > 0 && parent.topf > 0) {
+					parent.addxp(2);//
+					parent.addxp(3);//
+				}
+			}
+		}
+		if (parent.changeto==4) {
+			if (parent.topf > 0 && parent.nudeok() && parent.cute()){
+				parent.addxp(2);//
+				parent.addxp(3);//
+			}	
+		}
+		if (parent.changeto >= 6 && parent.changeto != 8 && parent.changeto != 9 && parent.changeto != 12) {
+			parent.addxp(2);//
+			parent.addxp(3);//
+		}
+		if (parent.changeto == 9) {
+			parent.addxp(2);//
+		}
+		//end xp calculations
+  		parent.picture.location.href = "pic12h.html";
+   		parent.respond.location.href = "resp12h.html";
+   	}
+}
+
+function waited()
+{
+	if (entered == 0)
+		choice2();
+}
+
+function choice2()
+{
+	if (parent.changeto == 0){  //0 = swimsuit to patio
+		if (parent.changect == 1 || parent.dress == 8)
+			parent.changect = 2;
+		else
+			parent.changect = 1;
+		if (parent.dress == 2){
+			parent.dress = 5;
+			parent.quote = 6;
+		}
+		else
+    		parent.dress = 4;
+    	parent.addxp(7);
+      	parent.justchanged = 1;
+    	parent.picture.location.href = "pic12c.html";
+    	parent.respond.location.href = "resp12c.html";
+  	}
+  	
+  	if (parent.changeto == 1){  //1 = swimsuit to swim *
+  		parent.changect++;
+  		if (parent.dress == 2){
+			parent.dress = 5;
+			parent.quote = 6;
+		}
+		else
+    		parent.dress = 4;
+    	parent.addxp(7);
+      	parent.dress = 4;
+      	parent.justchanged = 1;
+      	parent.picture.location.href = "pic12c.html";
+      	parent.respond.location.href = "resp12c.html";
+   	}
+   	
+  	if (parent.changeto == 2){  //2 = swimsuit to picnic
+  		parent.addxp(7);
+  		parent.changect++;
+    	parent.dress = 4;
+    	parent.change(30);
+  	}
+  	
+  	if (parent.changeto == 3){  //3 = swimsuit to hot tub *
+      	parent.addxp(7);
+  		parent.changect++;
+  		if (parent.dress == 2){
+			parent.dress = 5;
+			parent.quote = 6;
+		}
+		else
+    		parent.dress = 4;
+    	parent.picture.location.href = "pic12j.html";
+    	parent.respond.location.href = "resp12j.html";
+ 	}
+ 	
+  	if (parent.changeto == 4){  //4 = swimsuit to photoshoot *
+    	parent.addxp(7);
+    	parent.changect++;
+    	parent.dress = 4;
+    	parent.quote = 1;
+    	parent.change(86);
+   	}
+   	
+  	if (parent.changeto == 5){  //5 = dress up to go downtown
+    	parent.changect = 2;
+    	parent.shower = 1;
+    	parent.picture.location.href = "pic12i.html";
+    	parent.respond.location.href = "resp12i.html";
+	}
+	
+  	if (parent.changeto == 6){  //6 = nude to skinnydip *
+    	parent.dress = 7;
+  		parent.towel = 0;
+		parent.addxp(2);//
+		parent.addxp(3);//
+    	parent.picture.location.href = "pic12d.html";
+    	parent.respond.location.href = "resp12d.html";
+   	}
+   	
+  	if (parent.changeto == 7){  //7 = nude to streak *
+		parent.addxp(2);//
+		parent.addxp(3);//
+    	parent.picture.location.href = "pic12e.html";
+    	parent.respond.location.href = "resp12e.html";
+   	}
+   	
+  	if (parent.changeto == 8){  //8 = black skirt to restaurant
+  		parent.changect = 1;
+   		parent.dress = 8;
+    	parent.picture.location.href = "pic12f.html";
+    	parent.respond.location.href = "resp12f.html";
+  	}
+  	
+  	if (parent.changeto == 9){  //9 = black skirt to norm *
+  		parent.changect = 2;
+  		parent.justchanged = 1;
+   		parent.dress = 1;
+    	parent.picture.location.href = "pic12b.html";
+    	parent.quote = 2;
+    	parent.respond.location.href = "resp12b.html";
+   	}   
+   	
+  	if (parent.changeto == 10){  //10 = impromptu nude to skinnydip *
+  		parent.changect++;
+   		parent.dress = 7;
+  		parent.towel = 0;
+		parent.addxp(2);//
+		parent.addxp(3);//
+    	parent.picture.location.href = "pic12d.html";
+    	parent.respond.location.href = "resp12d.html";
+   	}
+   	
+  	if (parent.changeto == 11){ //11 = nude to hot tub *
+  		parent.changect++;
+   		parent.dress = 9;
+   		parent.rebec = 0;
+   		parent.towel = 0;
+    	parent.quote = 5;
+		parent.addxp(2);//
+		parent.addxp(3);//
+    	parent.picture.location.href = "pic12g.html";
+    	parent.respond.location.href = "resp12d.html";
+  	}
+  	
+  	if (parent.changeto == 12){  //12 = get dressed
+      	parent.changect = 2;
+      	parent.dress = 1;
+      	parent.picture.location.href = "pic12b.html";
+      	parent.respond.location.href = "resp12b.html";
+   	}
+   	
+  	if (parent.changeto == 13){  //13 = undressed *
+      	parent.changect = 2;
+      	parent.dress = 6;
+      	parent.quote = 6;
+		parent.addxp(2);//
+		parent.addxp(3);//
+      	parent.picture.location.href = "pic12b.html";
+      	parent.respond.location.href = "resp12d.html";
+   	}
+   
+   	if (parent.changeto == 14){  //13 = get out of wet clothes *
+      	parent.changect++;
+      	parent.dress = 7;
+   		parent.towel = 0;
+      	parent.quote = 7;
+      	parent.picture.location.href = "pic12b.html";
+      	parent.respond.location.href = "resp12d.html";
+   	}
+   	if (parent.changeto == 15){  //15 = nude to park *
+   		parent.dress = 9;
+		parent.addxp(2);//
+		parent.addxp(3);//
+    	parent.picture.location.href = "pic12m.html";
+   	}
+}
+
+function choice3() // to map
+{
+   	parent.comefrom = 3;
+	parent.change(11);
+}
+
+function choice4() // to patio
+{
+  if (parent.changeto == 1) {
+  		parent.justchanged = 0;
+  		parent.change(19);}
+  else {
+  		parent.change(18);}
+}
+
+function choice6() // to skinny dip
+{
+  parent.change(19);
+}
+
+function choice7() // to dare
+{
+  parent.picture.location.href = "pic53a.html";
+}
+
+function downtownrestaurant()
+{
+  parent.picture.location.href = "pic12k.html";
+}
+
+function choice8() //to restaurant
+{
+  parent.change(49);
+}
+
+function choice9() //to hottub, naked
+{
+  parent.food = 2;
+  parent.quote = 4;
+  parent.wet = 1;
+  parent.change(54);
+}
+function basketball()
+{
+	parent.change(108);
+}
+function tubbing()
+{
+	parent.change(87);
+}
+
+function downtowndress()
+{
+  parent.picture.location.href = "pic12l.html";
+}
+
+function choice10() //to downtown
+{
+    parent.dress = 8;
+    parent.drive = 1;
+    parent.change(68);
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p> </p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text12.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:27:09 GMT -->
+</html>

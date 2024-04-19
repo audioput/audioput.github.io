@@ -1,0 +1,330 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/d.htm? by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:36:22 GMT -->
+<head>
+<title>My Date With Ariane</title>
+</head>
+
+<SCRIPT LANGUAGE="javascript">
+<!-- Begin
+var locate = window.location.href;
+var dateval;
+function delineate(str)
+{
+	theleft = str.indexOf("?") + 1;
+	if (theleft > 0)
+		return(str.substring(theleft));
+	else
+		return("0");
+}
+dateval = delineate(locate);
+var str = '';
+var i;
+var j;
+var Event = new Array(8);
+var Opt1 = new Array(8);
+var Opt2 = new Array(8);
+var Opt3 = new Array(8);
+var Opt4 = new Array(8);
+var Opt5 = new Array(8);
+var option5 = 0;
+var option4 = 0;
+var option3 = 0;
+var option2 = 0;
+var option1 = 0;
+var event3 = 0;
+var event2 = 0;
+var event1 = 0;
+var xp = parseInt(dateval, 16);
+var Hexp = xp.toString(16);
+if (xp < 68719476736 && xp >=0 && Hexp != NaN) {
+var defdate = 0;
+if (xp == 0 || xp == 64) {
+	defdate = 1;
+}
+var verybad = 0;
+if (xp == 1 || xp == 3 || xp == 5 || xp == 7 || xp == 9) {
+	verybad = 1;
+}
+for (i=35;i>12;i-=8){
+	option5 = 0;
+	if (xp >= Math.pow(2,i)) {
+		option5 = 1;
+		xp -=Math.pow(2,i);
+	}
+	option4 = 0
+	if (xp >= Math.pow(2,i-1)) {
+		option4 = 1;
+		xp -=Math.pow(2,i-1);
+	}
+	option3 = 0;
+	if (xp >= Math.pow(2,i-2)) {
+		option3 = 1;
+		xp -=Math.pow(2,i-2);
+	}
+	option2 = 0;
+	if (xp >= Math.pow(2,i-3)) {
+		option2 = 1;
+		xp -= Math.pow(2,i-3);
+	}
+	option1 = 0;
+	if (xp >= Math.pow(2,i-4)) {
+		option1 = 1;
+		xp -= Math.pow(2,i-4);
+	}
+	event3 = 0;
+	if (xp >=  Math.pow(2,i-5)) {
+		event3 = 1;
+		xp -= Math.pow(2,i-5);
+	}
+	event2 = 0;
+	if (xp >=  Math.pow(2,i-6)) {
+		event2 = 1;
+		xp -= Math.pow(2,i-6);
+	}
+	event1 = 0;
+	if (xp >=  Math.pow(2,i-7)) {
+		event1 = 1;
+		xp -= Math.pow(2,i-7);
+	}
+	j = 4*event3 + 2*event2 + event1;
+	Event[j] = 1;
+	Opt1[j] = option1;
+	Opt2[j] = option2;
+	Opt3[j] = option3;
+	Opt4[j] = option4;
+	Opt5[j] = option5;
+}
+var rebecca = 0;
+if (xp >= 2048) {
+	rebecca = 1;
+	xp -=2048;
+}
+var sleepover = 0;
+if (xp >= 1024) {
+	sleepover = 1;
+	xp -=1024;
+}
+var hadsex = 0;
+if (xp >= 512) {
+	hadsex = 1;
+	xp -=512;
+}
+var grabboobs = 0;
+if (xp >= 256) {
+	grabboobs = 1;
+	xp -=256;
+}
+var diner = 0;
+if (xp >= 128) {
+	diner = 1;
+	xp -=128;
+}
+var bikini = 0;
+if (xp >= 64) {
+	bikini = 1;
+	xp -=64;
+}
+var nightclub = 0;
+if (xp >= 32) {
+	nightclub = 1;
+	xp -=32;
+}
+var restaurant = 0;
+if (xp >= 16) {
+	restaurant = 1;
+	xp -=16;
+}
+var drunk = 0;
+if (xp >= 8) {
+	drunk = 1;
+	xp -=8;
+}
+var sawass = 0;
+if (xp >= 4) {
+	sawass = 1;
+	xp -=4;
+}
+var sawboobs = 0;
+if (xp >= 2) {
+	sawboobs = 1;
+	xp -=2;
+}
+var badend = 0;
+if (xp >= 1) {
+	badend = 1;
+	xp -=1;
+}
+//extras based on impossible states
+var picnic = 0;
+if (restaurant && diner) {
+	picnic = 1;
+	restaurant = 0;
+	diner = 0;
+}
+var boat = 0;
+if (Opt1[5] == 1) {
+	boat = 1;
+}
+
+var pgout = 0;
+if (!defdate && !badend && !sawboobs && !sawass) pgout = 1;
+var hotdate = 0;
+if (!badend && hadsex) hotdate = 1;
+var ratedr = 0;
+if (!badend && !defdate && !pgout && !hotdate) ratedr = 1;
+
+str+='<p><img src=\"images/ldpic9.jpg\"><br>I went over to her place.  We talked, and drank some wine.<br>';
+if (restaurant) str += '<p><img src=\"images/ldrestaurant1.jpg\"><br>We went to a restaurant downtown<br>';
+if (diner) str += '<p><img src=\"images/lddiner1.jpg\"><br>We went to the Drive-N-Dine.<br>';
+if (picnic) str += '<p><img src=\"images/ldpicnic1.jpg\"><br>We had a poolside picnic in our swimsuits<br>';
+if (!restaurant && !diner &&!picnic && !verybad)str += '<p><img src=\"images/lddinner1.jpg\"><br>We had dinner at her place.<br>';
+if (Event[0]) {
+	if (!verybad && !defdate && !Event[1] && !Event[2] && !Event[4] && !Event[5] && !Event[6] && !Event[7]) str += '<p><img src=\"images/ldrock1.jpg\"><br>We danced to tunes in her living room.<br><p><img src=\"images/ldbgame1.jpg\"><br>We spent most of the date at her house.<br>';
+	if (!Opt1[0] && Opt2[0]) str += '<p><img src=\"images/ldfondle1.jpg\"><br>We made out on the couch.<br>';
+	if (bikini) str += '<p><img src=\"images/ldpatio1.jpg\"><br>She put on her bikini.<br>';
+	if (Opt3[0] && !Opt5[0]) str += '<p><img src=\"images/ldswim1.jpg\"><br>We went swimming.<br>';
+	if (Opt4[0]) str += '<p><img src=\"images/ldhottub1.jpg\"><br>We soaked in the hot tub.<br>';
+	if (Opt5[0]) str += '<p><img src=\"images/ldskinny1.jpg\"><br>We went skinny dipping.<br>';
+}
+
+if (Event[1]) {
+	str += '<p><img src=\"images/lddowntown1.jpg\"><br>We took a drive downtown.<br>';
+	if (Opt1[1] && !Opt2[1]) str += '<p><img src=\"images/ldshopping1.jpg\"><br>We went shopping but I did not buy her anything.<br>';
+	if (Opt1[1] && Opt2[1]) str += '<p><img src=\"images/ldshopping1.jpg\"><br>We went shopping and I bought her stuff.<br>';
+	if (nightclub && restaurant) str += '<p><img src=\"images/ldclub1.jpg\"><br>We went to Lizard`s Nightclub.<br>';
+	if (nightclub && !restaurant) str += '<p><img src=\"images/ldclub3.jpg\"><br>We went to Lizard`s Nightclub.<br>';
+	if (Opt3[1] && restaurant) str += '<p><img src=\"images/ldclub2.jpg\"><br>We got kicked out of the night club.<br>';
+	if (Opt3[1] && !restaurant) str += '<p><img src=\"images/ldclub4.jpg\"><br>We got kicked out of the night club.<br>';
+	if (Opt4[1]) str += '<p><img src=\"images/ldmuseum1.jpg\"><br>We went to a museum.<br>';
+	if (Opt5[1]) str += '<p><img src=\"images/ldamusement1.jpg\"><br>I took her to an amusement park, and rode on rides until she got sick.<br>';
+}
+else {
+	if (nightclub && restaurant) str += '<p><img src=\"images/ldclub1.jpg\"><br>We went to Lizard`s Nightclub.<br>';
+	if (nightclub && !restaurant) str += '<p><img src=\"images/ldclub3.jpg\"><br>We went to Lizard`s Nightclub.<br>';
+}
+
+if (rebecca) str += '<p><img src=\"images/ldrebecca1.jpg\"><br>I met Rebecca.<br>';
+if (Event[7]) {
+	if (Opt1[7]) str += '<p><img src=\"images/ldrebstrip1.jpg\"><br>She took us to a strip club.<br>';
+	if (Opt1[7] && Opt2[7]) str += '<p><img src=\"images/ldrebstrip2.jpg\"><br>We saw her get naked on stage.  She tried to talk Ariane into it, but she declined.<br>';
+	if (Opt1[7] && Opt3[7] && Opt4[7] && !Opt5[7]) str += '<p><img src=\"images/ldrebstrip3.jpg\"><br>Rebecca and Ariane both danced nude at a strip club on amateur night,<br>neither of them won the contest.<br>';
+	if (Opt1[7] && Opt3[7] && !Opt4[7] && !Opt5[7]) str += '<p><img src=\"images/ldrebstrip4.jpg\"><br>Rebecca and Ariane both danced at a strip club on amateur night.<br>Rebecca got completely nude, Ariane kept her clothes on. They both lost.<br>';
+	if (Opt1[7] && Opt3[7] && Opt4[7] && Opt5[7]) str += '<p><img src=\"images/ldrebstrip3.jpg\"><br>Rebecca and Ariane both danced nude at a strip club on amateur night.<br>Ariane was good enough to win.<br>';
+	if (Opt1[7] && Opt3[7] && !Opt4[7] && Opt5[7]) str += '<p><img src=\"images/ldrebstrip4.jpg\"><br>Rebecca and Ariane both danced at a strip club on amateur night.<br>Rebecca got completely nude, and even though Ariane kept her clothes on, she won.<br>';
+	if (!Opt1[7]) str += '<p><img src=\"images/ldstrip1.jpg\"><br>I took her to a strip club. There was a contest going on.<br>';
+	if (!Opt1[7] && Opt2[7]) str += '<p><img src=\"images/ldstrip2.jpg\"><br>I tried to talk her into dancing, but she declined.<br>';
+	if (!Opt1[7] && Opt3[7] && Opt4[7] && !Opt5[7]) str += '<p><img src=\"images/ldstrip3.jpg\"><br>Ariane tried dancing nude at a strip club on amateur night, but lost the contest.<br>';
+	if (!Opt1[7] && Opt3[7] && !Opt4[7] && !Opt5[7]) str += '<p><img src=\"images/ldstrip2.jpg\"><br>Ariane tried dancing at a strip club on amateur night, but lost the contest.<br>';
+	if (!Opt1[7] && Opt3[7] && Opt4[7] && Opt5[7]) str += '<p><img src=\"images/ldstrip6.jpg\"><br>Ariane tried dancing nude at a strip club on amateur night, and won!<br>';
+	if (!Opt1[7] && Opt3[7] && !Opt4[7] && Opt5[7]) str += '<p><img src=\"images/ldstrip5.jpg\"><br>Ariane tried dancing at a strip club on amateur night, and won.<br>';
+}
+
+if (Event[2]) {
+	if (Opt1[2]) str += '<p><img src=\"images/ldrebecca2.jpg\"><br>She took us to a nightclub.<br>';
+	if (Opt1[2] && !badend) str += '<p><img src=\"images/ldrebecca3.jpg\"><br>Then we ended up back at Ariane`s place.<br>';
+	if (!Opt2[2] && Opt5[2]) str += '<p><img src=\"images/ldrebecca4.jpg\"><br>Rebecca made herself at home and ran around naked.<br>';
+	if (Opt2[2] && !Opt5[2]) str += '<p><img src=\"images/ldrebecca5.jpg\"><br>The three of us ended up swimming in my pool. Rebecca and Ariane shared a bikini.<br>';
+	if (Opt2[2] && Opt5[2]) str += '<p><img src=\"images/ldrebecca6.jpg\"><br>The three of us ended up skinny dipping in the pool.<br>';
+	if (Opt4[2]) str += '<p><img src=\"images/ldrebecca7.jpg\"><br>Ariane chose to hang out with Rebecca instead of me.<br>';
+	if (Opt3[2] && !Opt5[2]) str += '<p><img src=\"images/ldrebecca8.jpg\"><br>The three of us had a sleep over, but we were all too tired to do more than sleep.<br>';
+	if (Opt3[2] && Opt5[2]) str += '<p><img src=\"images/ldrebecca9.jpg\"><br>The three of us had a nude sleep over, but we were all too tired to do more than sleep.<br>';
+}
+	
+if (Event[6]) {
+	str += '<p><img src=\"images/lddrive1.jpg\"><br>We took a drive into the mountains.<br>';
+	if (!Opt2[6] && badend) str += '<p><img src=\"images/lddrive2.jpg\"><br>We ran out of gas.<br>';
+	if (!Opt2[6] && !badend) str += '<p><img src=\"images/lddrive3.jpg\"><br>We made out in the car, but got interrupted by another couple.<br>';
+	if (Opt2[6] && !sawboobs && !sawass) str += '<p><img src=\"images/lddrive4.jpg\"><br>We took photos at the scenic view.<br>';
+	if (Opt2[6] && sawboobs && !sawass) str += '<p><img src=\"images/lddrive5.jpg\"><br>I took topless photos of Ariane at the scenic view.<br>';
+	if (Opt2[6] && sawass && !sawboobs) str += '<p><img src=\"images/lddrive6.jpg\"><br>I took bottomless photos of Ariane at the scenic view.<br>';
+	if (Opt2[6] && sawboobs && sawass) str += '<p><img src=\"images/lddrive7.jpg\"><br>I took nude photos of Ariane at the scenic view.<br>';
+	if (Opt3[6]) str += '<p><img src=\"images/lddrive8.jpg\"><br>Then she took naked photos of me.<br>';
+	if (Opt4[6]) str += '<p><img src=\"images/lddrive9.jpg\"><br>Then we had sex in the car.<br>';
+	if (Opt5[6]) str += '<p><img src=\"images/lddrive9.jpg\"><br>Then she gave me a blow job.<br>';
+	if (Opt5[6] && !badend) str += 'I returned the favor.<br>';
+	if (Opt5[6] && badend) str += 'I failed to return the favor.<br>';
+}
+
+if (Event[5]) {
+	str += '<p><img src=\"images/ldlake1.jpg\"><br>We went to the lake.<br>';
+	if (Opt1[5]) str += '<p><img src=\"images/ldlake2.jpg\"><br>We rented a boat.<br>';
+	if (Opt3[5]) str += '<p><img src=\"images/ldlake3.jpg\"><br>We went water skiing, and due to lack of swimsuits, we did it naked.<br>';
+	if (Opt1[5]) str += '<p><img src=\"images/ldlake4.jpg\"><br>We spent the night on the boat, but nothing happened.<br>';
+	if (Opt2[5] && restaurant && nightclub) str += '<p><img src=\"images/ldlake6.jpg\"><br>We went on a romantic walk on the beach.<br>';
+	if (Opt2[5] && !Opt4[5] && Opt5[5]) str += '<p><img src=\"images/ldlake7.jpg\"><br>She took off her dress on the beach.<br>';
+	if (Opt2[5] && (!restaurant || !nightclub)) str += '<p><img src=\"images/ldlake6.jpg\"><br>We took a walk on the beach.<br>';
+	if (Opt4[5] && !Opt5[5]) str += '<p><img src=\"images/ldlake8.jpg\"><br>She fell in the lake and ruined her dress.<br>';
+	if (Opt4[5] && Opt5[5]) str += '<p><img src=\"images/ldlake9.jpg\"><br>She fell in the lake and nearly ruined her dress, but had to take it off to do so.<br>';
+}
+
+
+if (Event[3]) {
+	str += '<p><img src=\"images/ldstore1.jpg\"><br>We went to the local store and met Jessie.<br>';
+	if (Opt5[3]) str += '<p><img src=\"images/ldstore2.jpg\"><br>Ariane went in to a convenience store completely naked.<br>';
+	if (Opt4[3]) str += '<p><img src=\"images/ldstore3.jpg\"><br>Ariane went in to a convenience store topless.<br>';
+	if (Opt3[3]) str += '<p><img src=\"images/ldstore4.jpg\"><br>Ariane went into a convenience store wearing only a towel.<br>';
+	if (Opt2[3]) str += '<p><img src=\"images/ldstore5.jpg\"><br>Ariane went into a convenience store in a bikini.<br>';
+	if (!Opt2[3] && !Opt3[3] && !Opt4[3] && !Opt5[3]) str += '<p><img src=\"images/ldstore6.jpg\"><br>Then we went back to her place and drank a six pack of beer.<br>';
+}
+
+if (Event[4]) {
+	if (Opt1[4] && !Opt5[4]) str += '<p><img src=\"images/ldpark1.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark5.jpg\"><br>She took her pants off and demonstrated some gynmastics skills.<br>';
+	if (Opt1[4] && Opt5[4]) str += '<p><img src=\"images/ldpark2.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark6.jpg\"><br>She took her dress off and demonstrated some gynmastics skills in the nude.<br>';
+	if (Opt2[4] && !Opt4[4] && !Opt5[4]) str += '<p><img src=\"images/ldpark1.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark7.jpg\"><br>We went to the park and played basketball.<br>';
+	if (Opt2[4] && Opt4[4]) str += '<p><img src=\"images/ldpark4.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark8.jpg\"><br>We went to the park and played basketball. She wore a bikini.<br>';
+	if (Opt2[4] && Opt5[4]) str += '<p><img src=\"images/ldpark3.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark9.jpg\"><br>We went to the park and played basketball. On a dare we shot freethrows naked.<br>';
+	if (Opt3[4] && !Opt4[4] && !Opt5[4]) str += '<p><img src=\"images/ldpark2.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark10.jpg\"><br>I took photos of her in front of the fountain at the park.<br>';
+	if (Opt3[4] && !Opt4[4] && Opt5[4]) str += '<p><img src=\"images/ldpark2.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark10.jpg\"><br>I took photos of her in front of the fountain at the park.<br><p><img src=\"images/ldpark12.jpg\"><br>She posed nude in some of them.<br>';
+	if (Opt3[4] && Opt4[4] && !Opt5[4]) str += '<p><img src=\"images/ldpark3.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark11.jpg\"><br>I took some bikini photos of her in front of the fountain at the park.<br>';
+	if (Opt3[4] && Opt4[4] && Opt5[4]) str += '<p><img src=\"images/ldpark3.jpg\"><br>We walked down to the park.<br><p><img src=\"images/ldpark11.jpg\"><br>I took some bikini photos of her in front of the fountain at the park.<br><p><img src=\"images/ldpark12.jpg\"><br>She posed nude in some of them.<br>';
+}
+
+if (defdate && !verybad) str += '<p><img src=\"images/ldrock1.jpg\"><br>We danced and played games at my place.<br><p><img src=\"images/ldfondle1.jpg\"><br>We made out some, but nothing heavy.<br>';
+
+if (sawboobs && !sawass && !verybad) str += '<p><img src=\"images/ldtopless.jpg\"><br>I saw her bare breasts, but she never got totally naked.<br>';
+if (sawboobs && sawass && !verybad) str += '<p><img src=\"images/ldnude.jpg\"><br>I saw her naked.<br>';
+if (grabboobs) str += '<p><img src=\"images/ldforeplay.jpg\"><br>We engaged in some naked foreplay.<br>';
+
+if (!hadsex && sleepover && !rebecca && !drunk && !boat) str += 'I spent the night on her couch.<br>';
+if (Event[0]) {
+	if (Opt1[0] && Opt2[0]) str += '<p><img src=\"images/ldcouchsex.jpg\"><br>We had sex on the couch.<br>';
+	if (Opt1[0] && !Opt2[0]) str += '<p><img src=\"images/ldhottubsex.jpg\"><br>We had sex in the hot tub.<br>';
+}
+if (sleepover && hadsex) str += '<p><img src=\"images/ldsex.jpg\"><br>We slept together and had sex multiple times.<br>';
+if (drunk && !sleepover) str += '<p><img src=\"images/lddrunk1.jpg\"><br>She got drunk, and then I left.<br>';
+if (drunk && sleepover && !hadsex) str += '<p><img src=\"images/lddrunk1.jpg\"><br>She got drunk and sick, and I made her comfortable, and stayed with her all night.<br>';
+if (verybad && sawass) str += '<p><img src=\"images/ldprivacy.jpg\"><br>I snuck in and accidentally saw her naked, then she threw me out.<br>';
+if (verybad && !sawass) str += '<p><img src=\"images/ldbadend.jpg\"><br>She threw me out.<br>';
+
+if (defdate) str += '<br>All in all it was a pretty ordinary date.';
+if (verybad) str += '<br>This was a pretty bad date.';
+if (badend && !verybad) str += '<br>The date may have ended badly, but she still likes me.';
+if (pgout) str += '<br>This was pretty much a PG rated date.';
+if (hotdate) str += '<br>This date got pretty erotic for a first date.';
+if (ratedr) str += '<br>This date was rated R for sexual themes and brief nudity.';
+}
+else {
+	str = "This is not a valid input";
+}
+//  End -->
+</script>
+
+<body topmargin="0" leftmargin="0">
+<img border="0" src="datetitle.jpg" lowsrc="Dating%20Simulator%20Title.html" width="1000" height="200">
+<blockquote>
+<p><font face="Arial" size="5">Here is what happened on my date with Ariane...<br>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+document.write(str);
+// End -->
+</SCRIPT>
+</font>
+</blockquote>
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/d.htm? by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 05:36:23 GMT -->
+</html>
+

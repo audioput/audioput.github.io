@@ -1,0 +1,91 @@
+<html>
+
+
+<!-- Mirrored from www.datingariane.com/text21.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:29:08 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>text1</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (parent.location.href == self.location.href) {
+window.location.href = 'default.html';
+}
+
+function loadpic()
+{
+	parent.picture.location.href = "pic21a.html";
+	parent.respond.location.href = "resp21.html";
+}
+
+function drink() //drink
+{
+  parent.justchanged = 0;
+  parent.drinkup();
+  parent.picture.location.href = "pic18i.html";
+  parent.respond.location.href = "blank.html";
+}
+
+function kitchen()
+{
+  	parent.justchanged = 0;
+  	if (parent.food >= 1) {
+  		parent.change(31);
+   	}
+	else {
+		if (parent.drink > 0) {
+			parent.change(23);
+		}
+		else {
+			parent.change(22);
+		}
+   	}
+}
+
+function bedroom() //stay the night
+{
+	if (parent.sleepover()) {
+		if (parent.justchanged == 1){ //if you just put clothes on, no immediately taking them off
+  			parent.addxp(1);
+			if (parent.dress == 1)
+       		parent.ending("end11a.html");
+       	if (parent.dress == 4)
+       		parent.ending("end11b.html");
+       }
+       else {
+			if (parent.swam == 1) {
+				parent.changeto = 2;
+				parent.change(84);
+			}
+			else {
+				parent.change(60);
+			}
+		}
+	}
+	else {	
+		parent.endtext = 'There, we cut through the bedroom, the hall and made it to the front door.<BR>Look at the time. We should call it a night. On a scale of 1 to 10, you get a 6.';
+		parent.endnum = 0;
+		parent.change(90);
+	}
+}
+
+function stargaze() //stargaze
+{
+  parent.justchanged = 0;
+  parent.sgsource = 21;
+  parent.change(55);
+}
+//  End -->
+</script>
+</head>
+
+<body onLoad = "loadpic()">
+
+<p></p>
+
+</body>
+
+
+<!-- Mirrored from www.datingariane.com/text21.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Apr 2018 04:29:10 GMT -->
+</html>
