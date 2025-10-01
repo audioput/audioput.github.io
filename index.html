@@ -45,6 +45,24 @@
 		body > footer > a:nth-child(2){
 			opacity: 0;
 		}
+		.acess-hidden {
+			position: absolute;
+			left: -10000px;
+			top: auto;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+		}
+		a[href]:not([disabled]).btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+    }
 	</style>
 </head>
 
@@ -55,21 +73,21 @@
 		<source src="audios/audioput_slogan.mp3" type="audio/ogg">
 		Seu navegador não suporta elementos de áudio
 	</audio>
-
+<a href="#content" class="acess-hidden">pular para conteúdo</a>
 	<nav>
-		<a href="#videos">
-			<button>Audiodescrição</button>
+		<a href="#videos" class="btn">
+			Audiodescrição
 		</a>
-		<a href="#contos">
-			<button>Contos Eróticos</button>
+		<a href="#contos" class="btn">
+			Contos
 		</a>
-		<a href="#jogos">
-			<button>Jogos</button>
+		<a href="#jogos" class="btn">
+			Jogos
 		</a>
-		<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeFLufat_ZO6gnMDQcmn7JHaVkNPJOr7_hTobTXGqRmHiCY-A/viewform?usp=sf_link">
-			<button>Pedidos e comentários</button>
+		<a target="_blank" class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeFLufat_ZO6gnMDQcmn7JHaVkNPJOr7_hTobTXGqRmHiCY-A/viewform?usp=sf_link">
+			Pedidos e comentários
 		</a>
-		<button onclick="playAudio()">Ouvir Slogan</button>
+		<a href="#" onclick="playAudio()" class="btn">Ouvir Slogan</a>
 	</nav>
 
 	<br>
@@ -82,7 +100,7 @@
 		}
 	</script>
 
-	<div class="content">
+	<div id="content" class="content">
 		<h3 id="videos">Índice de Conteúdo</h2>
 			<ol>
 				<li>
